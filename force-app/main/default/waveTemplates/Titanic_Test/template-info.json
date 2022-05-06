@@ -1,0 +1,105 @@
+{
+  "templateType" : "app",
+  "label" : "Titanic Analytics App",
+  "name" : "Titanic_Test",
+  "description" : "description - Titanic Template App - Description - Titanic Template App",
+  "assetVersion" : 54.0,
+  "variableDefinition" : "variables.json",
+  "uiDefinition" : "ui.json",
+  "rules" : [
+    {
+      "type" : "templateToApp",
+      "file" : "template-to-app-rules.json"
+    },
+    {
+      "type" : "appToTemplate",
+      "file" : "app-to-template-rules.json"
+    }
+  ],
+  "releaseInfo" : {
+    "templateVersion" : "1.2",
+    "notesFile" : "releaseNotes.html"
+  },
+  "folderDefinition" : "folder.json",
+  "externalFiles" : [ ],
+  "lenses" : [ ],
+  "dashboards" : [
+    {
+      "label" : "Titanic Dashboard",
+      "name" : "Titanic_Dashboard_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Titanic_Dashboard.json"
+    }
+  ],
+  "components" : [ ],
+  "eltDataflows" : [ ],
+  "recipes" : [
+    {
+      "label" : "Titanic_recipe",
+      "name" : "Titanic_recipe",
+      "condition" : "${Variables.Overrides.createAllRecipes}",
+      "file" : "recipes/Titanic_recipe.json"
+    }
+  ],
+  "datasetFiles" : [
+    {
+      "label" : "Scoring Dataset",
+      "name" : "Scoring_Dataset_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/Scoring_Dataset_XMD.json"
+    },
+    {
+      "label" : "Training Dataset",
+      "name" : "Training_Dataset_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/Training_Dataset_XMD.json"
+    }
+  ],
+  "storedQueries" : [ ],
+  "imageFiles" : [ ],
+  "customAttributes" : [
+    {
+      "label" : "Features",
+      "values" : [
+        "Recipe",
+        "Prebuilt Dashboards"
+      ]
+    },
+    {
+      "label" : "Salesforce Objects",
+      "values" : [
+        "Standard Objects",
+        "Custom Objects"
+      ]
+    },
+    {
+      "label" : "Publisher",
+      "values" : [
+        "Analytics Test"
+      ]
+    }
+  ],
+  "extendedTypes" : { },
+  "templateDependencies" : [ ],
+  "tags" : [
+    "Trending",
+    "Manager",
+    "Operations",
+    "Executive"
+  ],
+  "icons" : {
+    "appBadge" : {
+      "name" : "16.png"
+    },
+    "templateBadge" : {
+      "name" : "trailhead_icon_160x160"
+    },
+    "templatePreviews" : [
+      {
+        "name" : "Worldwidedbss",
+        "label" : "Titanic Analytics",
+        "description" : "Create an app using the titanic dataset."
+      }
+    ]
+  }
+}

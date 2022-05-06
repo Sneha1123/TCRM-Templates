@@ -1,0 +1,23 @@
+{
+  "constants" : [ ],
+  "macros" : [ ],
+  "rules" : [ 
+    {
+      "name": "SetTitle",
+      "appliesTo": [
+        {
+          "type":"dashboard",
+          "name": "*"
+        }
+      ],
+      "actions": [
+        {
+          "action":"set",
+          "description": "Set Dashboard title in text box as specified by user in UI",
+          "path": "$.state.widgets.text_1.parameters.content.richTextContent[0]['insert']",
+          "value":"${Variables.DashboardTitle}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "pages" : [
+    {
+      "title": "Choose a dataset",
+      "variables": [
+        {
+          "name": "TitanicDataset"
+        }
+      ]
+    },
+    {
+      "title": "Choose a title for your dashboard.",
+      "variables": [     
+        {
+          "name": "DashboardTitle"
+        }
+      ] 
+    }
+   ],
+  "displayMessages" : [ ]
+}
